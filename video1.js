@@ -5,6 +5,9 @@
     var timeField = document.getElementById('time-field');
     var soundButton = document.getElementById('sound-button');
     var fullScreenButton = document.getElementById('fullscreen-button');
+    var forwardButton = document.getElementById('forward');
+    var rewindButton = document.getElementById('rewind');
+    var guandengButton = document.getElementById('guandeng');
 
     function playpause1() {
         if (video.paused) {
@@ -76,4 +79,30 @@
         }
     }
     fullScreenButton.onclick = quanping;
+
+    function forward() {
+        video.currentTime = video.currentTime + 5;
+    }
+
+    function rewind() {
+        video.currentTime = video.currentTime - 5;
+    }
+    rewindButton.onclick = rewind;
+    forwardButton.onclick = forward;
+
+    function guandeng() {
+        var x = document.getElementById('back');
+        if (x.style.backgroundColor == "black") {
+        	x.style.backgroundColor = "none";
+            x.style.background = "url('background.jpeg') no-repeat";
+            guandengButton.innerHTML="关&nbsp灯"
+           
+        } else {
+        	x.style.background = "none";
+            x.style.backgroundColor = "black";
+            guandengButton.innerHTML="开&nbsp灯"
+            
+        }
+    }
+    guandengButton.onclick = guandeng;
 }(window))

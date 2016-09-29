@@ -63,7 +63,7 @@ img,#pbar-container,#sbar-container {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin: 0 10px;
+    margin: 0 9px;
 }
 
 #time-field {
@@ -88,7 +88,30 @@ img,#pbar-container,#sbar-container {
     width: 100%;
     background-color: rgb(50, 170, 220);
 }
-
+#rewind,#forward{
+    background-color: #1e1e1e;
+}
+#guandeng{
+    background-color: #1e1e1e;
+    color: rgb(50, 170, 220);
+    border:none;
+    outline:none;
+}
+#choose{
+    background-color: #1e1e1e;
+    color: rgb(50, 170, 220);
+    border:none;
+    outline:none;
+    top: 2px;
+    position: relative;
+    height: 25px;
+}
+#tianjia{
+    background-color: #1e1e1e;
+    color: rgb(50, 170, 220);
+    border:none;
+    outline:none;
+}
 #fullscreen-button {
     float: right;
 }
